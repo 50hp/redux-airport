@@ -8,12 +8,9 @@ import logger from 'redux-logger';
 /** TODO: Add REDUCERS */
 const airLines  =(state = [], action) => {
     if (action.type ==="ADD") {
-        return state.concat(action.data);
+        return [...state, action.data]
 
     }
-    
-            
-
     return state;
 
 
